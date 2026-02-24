@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* all p inside div */
+div p {
+  color: blue;
+}
+
+/* direct p only */
+div > p {
+  background: yellow;
+}
+
+/* first p after div */
+div + p {
+  border: 2px solid red;
+}
+
+/* all p after div */
+div ~ p {
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>direct p (blue + yellow)</p>
+  <span><p>nested p (blue only)</p></span>
+</div>
+
+<p>first after div (red border + italic)</p>
+<p>second after div (italic only)</p>
+
+</body>
+</html>
